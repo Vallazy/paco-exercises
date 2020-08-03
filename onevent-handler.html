@@ -1,0 +1,45 @@
+<meta name="viewport" content="width=device-width"/>
+
+<style>
+	.container {
+	  display: grid;
+	  grid-gap: 12px;
+	  max-width: 500px;
+	  margin: auto;
+	}
+	#btn-pesan {
+	  display: block;
+	  width: 100%;
+	  padding: 4px;
+	}
+</style>
+
+<div class="container">
+  <div>
+    <label for="makanan">Nama Makanan : </label>
+    <input id="makanan" type="text">
+  </div>
+  <div>
+    <button id="btn-pesan">Pesan</button>
+  </div>
+  
+  <div>
+    Pesanana Anda :
+    <pre id="txt-pesanan">Belum ada pesanan.</pre>
+  </div>
+</div>
+
+
+<script>
+	
+	let btnPesan = document.querySelector('#btn-pesan');
+	let txtPesan = document.querySelector('#txt-pesanan');
+	let iMakanan = document.querySelector('#makanan');
+	
+	function pesanMakanan() {
+	  txtPesan.textContent = makanan.value;
+	}
+	
+	// pasang onevent handler pada tombol Pesan
+	
+</script>
